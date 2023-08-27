@@ -1,4 +1,57 @@
+.narbar{
+  background: #aa0601;
+  padding: 12px 0;
+  @media(max-width: 768px){
+      padding: 12px 0 0 0;
+      
+  }
+}
+.no-padding{
+  @media (max-width:768px) {
+      padding: 0 0;
+  }
+}
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  display: flex;
+  justify-content: space-between;
+  @media(max-width: 768px){
+      flex-direction: column;
+  }
+}
+.nav-logo{
+  width: 80px;
+  @media(max-width: 768px){
+      margin-left: 15px;
+      margin-bottom: 12px;
+  }
+}
+.narbar-right{
+  display: flex;
+  align-items:center;
+   @media(max-width: 768px){
+      flex-wrap: wrap;
+  }
+}
+
+.narbar-item{
+  @media(max-width: 768px){
+      width: 50%;
+      border: 1px solid white;
+      text-align: center;
+      padding: 12px 0;
+  }
+}
+
+.narbar-a{
+  color: white;
+  font-size: 20px;
+  padding: 0 32px;
+  @media(max-width:768px){
+      padding: 0 0;
+      font-size: 16px;
+      
+  }
+}
+.narbar-a:hover{
+  opacity: 0.7;
 }
