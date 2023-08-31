@@ -74,6 +74,23 @@
 .ps-6{
   padding-left: $spacer*6;
 }
-.w-76{
+.w-76px{
   width: $font-size-base*76;
+}
+@media (max-width:1920px){
+  .w-md-100{
+    max-width: 100%;
+  }
+  .w-md-50{
+    max-width:50%;
+  }
+  .d-md-block{
+    display: block;
+  }
+  .d-md-flex{
+    display: flex;
+  }
+  .me-md-0{
+    margin-right: 0px;
+  }
 }
