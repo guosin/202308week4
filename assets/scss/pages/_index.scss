@@ -5,15 +5,18 @@
   font-weight: bolder;
 }
 
+
 .w-100{
-  max-width: 100%;
+  width: 100%;
 }
 .w-40{
-  max-width: 40%;
+  width: 40%;
 }
 .w-60{
-  max-width: 60%;
+  width: 60%;
 }
+
+
 .bd{
   border: 1px solid #000;
 }
@@ -83,12 +86,23 @@
 .w-76px{
   width: $font-size-base*76;
 }
+.map{
+  width: 100%;
+  height: 100%;
+  @include pad{
+    height: 414px;
+  }
+  @include phone{
+    height: 208px;
+  }
+
+}
 @include pad{
   .w-md-100{
-    max-width: 100%;
+    width: 100%;
   }
   .w-md-50{
-    max-width:50%;
+    width:50%;
   }
   .d-md-block{
     display: block;
@@ -110,7 +124,6 @@
   }
 
 
-
 }
 @include phone{
   .d-sm-block{
@@ -120,7 +133,7 @@
     margin-right: 0px;
   }
   .w-sm-100{
-    max-width: 100%;
+    width: 100%;
   }
   .fs-sm-6{
     font-size: $font-size-base*6;
