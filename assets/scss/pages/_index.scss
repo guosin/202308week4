@@ -6,7 +6,7 @@
 }
 
 .w-100{
-  width: 100%;
+  max-width: 100%;
 }
 .w-40{
   max-width: 40%;
@@ -83,7 +83,7 @@
 .w-76px{
   width: $font-size-base*76;
 }
-@media (max-width:768px){
+@include pad{
   .w-md-100{
     max-width: 100%;
   }
@@ -112,7 +112,7 @@
 
 
 }
-@media (max-width:375px){
+@include phone{
   .d-sm-block{
     display: block;
   }
