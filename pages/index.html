@@ -14,23 +14,27 @@
 
 <body>
   <%- include('./layout/header'); -%>
-  <div class="container">
-    <h1 class="h1 ps-4 border-left-red-8 mb-8 mt-25 font-weight-bold">門市據點</h1>
+  <div class="container pt-24 pb-20 pt-md-20 pt-sm-10 pb-sm-16">
+    <h1 class="h1 ps-4 border-left-red-8 mb-8 font-weight-bold">門市據點</h1>
     <!-- 下拉式選單 -->
     <div class="mb-10">
-      <label for="store" class="me-4">選擇分店</label>
-      <select name="store" id="store" class="border-gray-1 w-76px">
+      <label for="store" class="me-4 fs-sm-6">選擇分店</label>
+      <select name="store" id="store" class="border-gray-1 w-76px w-sm-100">
         <option value="台北中山旗艦店">台北中山旗艦店</option>
         <option value="台中旗艦店">台中旗艦店</option>
         <option value="高雄旗艦店">高雄旗艦店</option>
       </select>
     </div>
     <!-- 內容區塊 -->
-    <main class="d-flex mb-20 d-md-block">
-      <div class="w-40 d-md-flex me-6 me-md-0">
-        <img class="w-md-50" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true "
+    <main class="d-flex d-md-block">
+      <!-- 分店圖片+介紹區塊 -->
+      <div class="w-40 d-md-flex me-6 me-md-0 w-md-100 mb-md-6 d-sm-block w-sm-100">
+        <!-- 分店圖片 -->
+        <img class="w-md-50 me-md-6 me-sm-0 w-sm-100 " src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true "
           alt="台北中山旗艦店">
-        <div class="border-gray-1 w-md-50">
+          <!-- 分店圖片 -->
+          <!-- 分店介紹 -->
+        <div class="border-gray-1 w-md-50 w-sm-100" >
           <h2 class="border-bottom-gray-1 pt-2 pb-2 ps-6">台北中山旗艦店</h2>
           <ul class="pt-4 pb-4 ps-4">
             <li class="mb-2 fs-5"><span class="material-symbols-outlined index-material-icon">call</span>電話 : (02)000-1234</li>
@@ -42,8 +46,13 @@
               </span>地址 : 台北市中山區南京東路25巷2-1號</li>
           </ul>
         </div>
+        <!-- 分店介紹 -->
       </div>
-      <img class="w-60 w-md-100" src="../assets/images/map.jpg" alt="">
+      <!-- 分店圖片+介紹區塊  -->
+
+      <!-- map區塊 -->
+      <iframe class="w-60 w-md-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1090.1290971735411!2d121.58591563124344!3d25.062120151464963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab7e6922da7d%3A0x7d3785537ef6c435!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A5Y2X5Lqs5p2x6Lev5YWt5q61IFNlY3Rpb24gNg!5e0!3m2!1szh-TW!2stw!4v1693626806478!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- map區塊 -->
     </main>
   </div>
 
