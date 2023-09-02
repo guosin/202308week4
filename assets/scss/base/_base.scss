@@ -8,7 +8,9 @@ body{
 .container{
     max-width:1320px;
     margin: 0 auto;
-    padding: 0 12px;
+    // padding: 0 12px;
+    padding-right: 12px;
+    padding-left: 12px;
     /* padding: 0 12px; */
     /* 手機板 */
     // @media(max-width: 1920px){
@@ -17,11 +19,15 @@ body{
     // }
     @include pad{
         max-width: 768px;
-        padding: 0 12px;
+        // padding: 0 12px;
+        padding-right: 12px;
+        padding-left: 12px;
     }
     @include phone{
         max-width: 375px;
-        padding: 0 12px;
+        // padding: 0 12px;
+        padding-right: 12px;
+        padding-left: 12px;
     }
     
 }
@@ -40,3 +46,5 @@ h1{
 h2{
     font-size:$font-size-base*6;
 }
+
+
